@@ -1,4 +1,4 @@
-# KhetAI - AI-Powered Farming Assistant
+# Annagrah - AI-Powered Farming Assistant
 
 KhetAI is an AI-powered, multilingual web application designed to be a personal farming assistant for Indian farmers.
 It provides instant access to crucial information and diagnostics through a simple, conversational interface.
