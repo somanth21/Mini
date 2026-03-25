@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Annagrah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,701&display=swap" rel="stylesheet" />
+  </head>
+  <body class="font-body antialiased">
+    <div class="full-landing-image" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: -1;"></div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/jquery.ripples/dist/jquery.ripples.min.js"></script>
+    <script>
+      $(function(){
+        try {
+          if ($.fn.ripples) {
+            $(".full-landing-image").ripples({
+              resolution: 256,
+              perturbance: 0.002
+            });
+          }
+        } catch (e) {
+          console.warn('Ripples init failed', e);
+        }
+      });
+    </script>
+  </body>
+</html>
